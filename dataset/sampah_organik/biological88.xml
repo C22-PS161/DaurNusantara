@@ -1,0 +1,25 @@
+<annotation>
+	<folder>&#x2F;work/daurnusantara-ml/dataset</folder>
+	<filename>biological88.jpg</filename>
+	<path>/&#x2F;work/daurnusantara-ml/dataset/biological88.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>219</width>
+		<height>230</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>sampah_organik</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>53</ymin>
+			<xmax>212</xmax>
+			<ymax>178</ymax>
+		</bndbox>
+	</object>
+</annotation>
