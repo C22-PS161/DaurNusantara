@@ -1,0 +1,25 @@
+<annotation>
+	<folder>daurnusantara</folder>
+	<filename>glass6.jpg</filename>
+	<path>/daurnusantara/glass6.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>384</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>cup</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>195</xmin>
+			<ymin>62</ymin>
+			<xmax>320</xmax>
+			<ymax>279</ymax>
+		</bndbox>
+	</object>
+</annotation>
