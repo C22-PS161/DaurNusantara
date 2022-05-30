@@ -1,0 +1,25 @@
+<annotation>
+	<folder>/work/daurnusantara-ml/dataset</folder>
+	<filename>(595).png</filename>
+	<path>/work/daurnusantara-ml/dataset/(595).png</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>294</width>
+		<height>172</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>93</xmin>
+			<ymin>1</ymin>
+			<xmax>195</xmax>
+			<ymax>151</ymax>
+		</bndbox>
+	</object>
+</annotation>
