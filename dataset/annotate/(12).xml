@@ -1,7 +1,7 @@
 <annotation>
-	<folder>/work/daurnusantara-ml/dataset</folder>
+	<folder>/daurnusantara-ml</folder>
 	<filename>(12).png</filename>
-	<path>/work/daurnusantara-ml/dataset/(12).png</path>
+	<path>/daurnusantara-ml/(12).png</path>
 	<source>
 		<database>Unspecified</database>
 	</source>

@@ -1,7 +1,7 @@
 <annotation>
-	<folder>daurnusantara</folder>
+	<folder>/daurnusantara-ml</folder>
 	<filename>plastic14.jpg</filename>
-	<path>/daurnusantara/plastic14.jpg</path>
+	<path>/daurnusantara-ml/plastic14.jpg</path>
 	<source>
 		<database>Unspecified</database>
 	</source>
