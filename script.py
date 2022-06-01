@@ -1,5 +1,3 @@
-import os
-from xml.dom import xmlbuilder
 import xml.etree.ElementTree as ET
 import pandas as pd
 import glob
@@ -32,10 +30,12 @@ def ubah_xml(path):
     # tree.find('./folder').text = namafolder
     # # tree.find('./').text =
     # tree.write(path)
+  
 
 def main():
-    data_xml = ubah_xml(os.getcwd())
-    data_xml.to_csv('labels.csv', index=None) #konversi ke CSV
+    path = './dataset/annotate'
+    data_xml = ubah_xml(path)
+    data_xml.to_csv('./labels.csv', index=None) #konversi ke CSV
     print("Berhasil mengkonversikan xml ke CSV")
 
 main()    
