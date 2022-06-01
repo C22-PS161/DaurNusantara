@@ -1,4 +1,6 @@
+import copy
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import cross_val_predict, StratifiedKFold, train_test_split
 
 #--------------------------------------------------
@@ -6,6 +8,27 @@ from sklearn.model_selection import cross_val_predict, StratifiedKFold, train_te
 #--------------------------------------------------
 DATASET_PATH = "./labels.csv"
 df = pd.read_csv(DATASET_PATH)
+
+#--------------------------------------------------
+# add classes number into dataframe
+#--------------------------------------------------
+# kantong           : 0 
+# kertas            : 1 
+# piring            : 2 
+# sampah_organik    : 3 
+# kardus            : 4 
+# cup               : 5 
+# kaleng            : 6 
+# botol             : 7
+targets_class = copy.deepcopy(df['class'])
+arr_unique = targets_class.unique()
+
+for i in range(len(arr_unique)):
+    for j in range(len(targets_class)):
+        if(targets_class.values[j] == arr_unique[i]):
+            targets_class.values[j] = i
+
+df['class_int'] = targets_class
 
 #--------------------------------------------------
 # split the dataset with 0.2 data test
