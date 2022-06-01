@@ -30,33 +30,35 @@ for i in range(len(arr_unique)):
 
 df['class_int'] = targets_class
 
-#--------------------------------------------------
-# split the dataset with 0.2 data test
-#--------------------------------------------------
-train, test = train_test_split(df, test_size=0.2)
+df.to_csv('./new_labels.csv', index=False)
 
-#--------------------------------------------------
-# split the feature and target
-#--------------------------------------------------
-y = df['class'].values
-x = df.drop(['class'], axis=1)
+# #--------------------------------------------------
+# # split the dataset with 0.2 data test
+# #--------------------------------------------------
+# train, test = train_test_split(df, test_size=0.2)
 
-y_train = train['class'].values
-x_train = train.drop(['class'], axis=1)
+# #--------------------------------------------------
+# # split the feature and target
+# #--------------------------------------------------
+# y = df['class'].values
+# x = df.drop(['class'], axis=1)
 
-y_test = test['class'].values
-x_test = test.drop(['class'], axis=1)
+# y_train = train['class'].values
+# x_train = train.drop(['class'], axis=1)
 
-#--------------------------------------------------
-# modeling 
-#--------------------------------------------------
+# y_test = test['class'].values
+# x_test = test.drop(['class'], axis=1)
+
+# #--------------------------------------------------
+# # modeling 
+# #--------------------------------------------------
 
 
-#--------------------------------------------------
-# cross validation performance model
-#--------------------------------------------------
-SPLIT_NUM = 10
-skf = StratifiedKFold(n_splits=SPLIT_NUM, random_state=42, shuffle=True)
+# #--------------------------------------------------
+# # cross validation performance model
+# #--------------------------------------------------
+# SPLIT_NUM = 10
+# skf = StratifiedKFold(n_splits=SPLIT_NUM, random_state=42, shuffle=True)
 
-# predict the cross validation with kfold model
-kfold_predict = cross_val_predict(clf, x, y, cv=skf)
+# # predict the cross validation with kfold model
+# kfold_predict = cross_val_predict(clf, x, y, cv=skf)

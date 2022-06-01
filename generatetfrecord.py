@@ -53,7 +53,7 @@ def create_tf_example(group, path):
     return tf_example
 
 def main():
-    csv_filepath = './labels.csv'
+    csv_filepath = './new_labels.csv'
     img_dir = './dataset/images'
     tfr_output_path = './tfrecord_dataset/output.record'
     writer = tf.io.TFRecordWriter(tfr_output_path)
