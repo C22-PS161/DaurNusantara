@@ -16,3 +16,5 @@ lvis
 scipy
 pyparsing==2.4.7
 tensorflow_hub
+object-detection
+tf-object-detection-util
