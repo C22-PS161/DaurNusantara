@@ -13,7 +13,7 @@ def split(df, group):
     return [data(filename, gb.get_group(x)) for filename, x in zip(gb.groups.keys(), gb.groups)]
 
 def create_tf_example(group, path):
-    with tf.gfile.GFile(os.path.join(path, '{}'.format(group.filename)), 'rb') as fio:
+    with tf.io.gfile.GFile(os.path.join(path, '{}'.format(group.filename)), 'rb') as fio:
         encoded_jpg = fio.read()
     encoded_jpg_io = io.BytesIO(encoded_jpg)
     image = Image.open(encoded_jpg_io)
@@ -55,8 +55,8 @@ def create_tf_example(group, path):
 def main():
     csv_filepath = './labels.csv'
     img_dir = './dataset/images'
-    tfr_output_path = './tfrecord_dataset'
-    writer = tf.python_io.TFRecordWriter(tfr_output_path)
+    tfr_output_path = './tfrecord_dataset/output.record'
+    writer = tf.io.TFRecordWriter(tfr_output_path)
     path = os.path.join(img_dir)
     examples = pd.read_csv(csv_filepath)
     grouped = split(examples, 'filename')
@@ -65,3 +65,5 @@ def main():
         writer.write(tf_example.SerializeToString())
     writer.close()
     print('Successfully created the TFRecord file: {}'.format(tfr_output_path))
+
+main()
