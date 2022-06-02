@@ -32,10 +32,13 @@ df['class_int'] = targets_class
 
 df.to_csv('./new_labels.csv', index=False)
 
-# #--------------------------------------------------
-# # split the dataset with 0.2 data test
-# #--------------------------------------------------
-# train, test = train_test_split(df, test_size=0.2)
+#--------------------------------------------------
+# split the dataset with 0.2 data test
+#--------------------------------------------------
+train, test = train_test_split(df, test_size=0.2)
+train.to_csv('./train.csv', index=False)
+test.to_csv('./test.csv', index=False)
+
 
 # #--------------------------------------------------
 # # split the feature and target

@@ -7,7 +7,7 @@ from PIL import Image
 from object_detection.utils import dataset_util
 from collections import namedtuple
 
-flags = tf.app.flags
+flags = tf.compat.v1.flags
 flags.DEFINE_string('csv_input', '', 'Path to the CSV input')
 flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
@@ -60,14 +60,14 @@ def create_tf_example(group, path):
 def main():
     img_dir = './dataset/images'
     tfr_output_path = './tfrecord_dataset/output.record'
-    writer = tf.io.TFRecordWriter(FLAGS.tfr_output_path)
+    writer = tf.io.TFRecordWriter(FLAGS.output_path)
     path = os.path.join(img_dir)
-    examples = pd.read_csv(FLAGS.csv_filepath)
+    examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:
         tf_example = create_tf_example(group, path)
         writer.write(tf_example.SerializeToString())
     writer.close()
-    print('Successfully created the TFRecord file: {}'.format(tfr_output_path))
+    print('Successfully created the TFRecord file: {}'.format(FLAGS.output_path))
 
 main()
