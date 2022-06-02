@@ -30,7 +30,14 @@ def ubah_xml(path):
     # tree.find('./folder').text = namafolder
     # # tree.find('./').text =
     # tree.write(path)
-  
+
+############################
+from object_detection.utils import config_util
+from object_detection.protos import pipeline_pb2
+from google.protobuf import text_format
+
+def load_model(config_model_path):
+  config =
 
 def main():
     path = './dataset/annotate'

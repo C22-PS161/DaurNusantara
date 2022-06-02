@@ -7,6 +7,11 @@ from PIL import Image
 from object_detection.utils import dataset_util
 from collections import namedtuple
 
+flags = tf.app.flags
+flags.DEFINE_string('csv_input', '', 'Path to the CSV input')
+flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
+FLAGS = flags.FLAGS
+
 def split(df, group):
     data = namedtuple('data', ['filename', 'object'])
     gb = df.groupby(group)
@@ -53,12 +58,11 @@ def create_tf_example(group, path):
     return tf_example
 
 def main():
-    csv_filepath = './new_labels.csv'
     img_dir = './dataset/images'
     tfr_output_path = './tfrecord_dataset/output.record'
-    writer = tf.io.TFRecordWriter(tfr_output_path)
+    writer = tf.io.TFRecordWriter(FLAGS.tfr_output_path)
     path = os.path.join(img_dir)
-    examples = pd.read_csv(csv_filepath)
+    examples = pd.read_csv(FLAGS.csv_filepath)
     grouped = split(examples, 'filename')
     for group in grouped:
         tf_example = create_tf_example(group, path)

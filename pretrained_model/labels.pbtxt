@@ -1,0 +1,32 @@
+item {
+  id: 1
+  name: 'kantong'
+}
+item {
+  id: 2
+  name: 'kertas'
+}
+item {
+  id: 3
+  name: 'piring'
+}
+item {
+  id: 4
+  name: 'sampah_organik'
+}
+item {
+  id: 5
+  name: 'kardus'
+}
+item {
+  id: 6
+  name: 'cup'
+}
+item {
+  id: 7
+  name: 'kaleng'
+}
+item {
+  id: 8
+  name: 'botol'
+}
