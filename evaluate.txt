@@ -1,0 +1,1 @@
+"D:\Instalation\Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
