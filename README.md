@@ -40,12 +40,12 @@ Object detection using Tensorflow with pre-trained model Centernet.
 
 ## Setup
 1. git clone <a href=https://github.com/tensorflow/models.git>tensorflow-model</a>
-2. Download <a href=https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.4>protoc 3.19.4</a>
-3. Pindah ke folder `/research`
+2. Download <a href=https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.4>protoc 3.19.4</a> and set the PATH
+3. Move to `/research` directory
 3. `pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI`
 4. `protoc object_detection/protos/*.proto --python_out=.`
 5. `cp tensorflow\research\object_detection\packages\tf2\setup.py`
-6. `pip install --upgrade`
+6. `python -m pip install --upgrade pip`
 7. `pip install .`
 8. Test the installation with `python object_detection/builders/model_builder_tf2_test.py` (inside models\research)
 
@@ -58,9 +58,13 @@ Object detection using Tensorflow with pre-trained model Centernet.
 6. Change .pbtxt file according to your category images label
 7. Run `python transfer_learning.py`
 8. (Train model) Run `python model_main_tf2.py` from tensorflow model 
-    >"Tensorflow\models\research\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --num_train_steps=2000
+```bash
+"Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --num_train_steps=2000
+```
 9. (Evaluate model) Run `python model_main_tf2.py` from tensorflow model 
-    >"Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
+```bash
+"Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
+```
 10. (WIP)
 
 ## Object Detection Labels
