@@ -6,7 +6,7 @@ import glob
 # tree.find('./folder').text = 'cobaaja'
 # tree.write('(6) - Copy.xml')
 
-def ubah_xml(path):
+def convert_to_xml(path):
     list_xml = []
     for file in glob.glob (path + '/*.xml'): #mengecek setiap file .xml
         tree = ET.parse(file)
@@ -36,12 +36,12 @@ from object_detection.utils import config_util
 from object_detection.protos import pipeline_pb2
 from google.protobuf import text_format
 
-def load_model(config_model_path):
-  config =
+# def load_model(config_model_path):
+#   config =
 
 def main():
     path = './dataset/annotate'
-    data_xml = ubah_xml(path)
+    data_xml = convert_to_xml(path)
     data_xml.to_csv('./labels.csv', index=None) #konversi ke CSV
     print("Berhasil mengkonversikan xml ke CSV")
 

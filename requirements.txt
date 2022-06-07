@@ -18,3 +18,6 @@ pyparsing==2.4.7
 tensorflow_hub
 object-detection
 tf-object-detection-util
+protoc==3.19.4
+git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+cython
