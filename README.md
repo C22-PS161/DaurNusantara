@@ -16,7 +16,7 @@
 Object detection using Tensorflow with pre-trained model Centernet. 
 
 ## Screenshots
-![Training screenshot](./img/screenshot(1).png)
+![Example screenshot](./img/screenshot(1).png)
 
 ## Libraries
 * Matplotlib
