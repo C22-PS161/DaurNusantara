@@ -13,9 +13,9 @@ def convert_to_xml(path):
         root = tree.getroot()
         for object_tag in root.findall('object'): #dikarenakan tiap gambar bisa ada lebih dari 1 objek
             values = (
-                root[1].text, #filename
-                int(root[4][0].text), #size width
-                int(root[4][1].text), #size height
+                root.find('filename').text, #filename
+                int(root.find('size')[0].text), #size width
+                int(root.find('size')[1].text), #size height
                 object_tag[0].text, #nama objek
                 int(object_tag[4][0].text), #bndbox xmin
                 int(object_tag[4][1].text), #bndbox ymin

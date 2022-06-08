@@ -33,21 +33,30 @@ Object detection using Tensorflow with pre-trained model Centernet.
 * Pycocotools
 * lvis
 * Pyparsing - version 2.4.7
-* object-detection
+* object-detection - version 0.1
 * tf-object-detection-util
 * protoc - version 3.19.4
-* git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+* PythonAPI for cocodataset
+* httplib2 - version 0.19.1
+* pyparsing - version 2.4.2
 
 ## Setup
-1. git clone <a href=https://github.com/tensorflow/models.git>tensorflow-model</a>
+1. git clone <a href=https://github.com/tensorflow/models.git>tensorflow/models</a>
 2. Download <a href=https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.4>protoc 3.19.4</a> and set the PATH
 3. Move to `/research` directory
-3. `pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI`
-4. `protoc object_detection/protos/*.proto --python_out=.`
-5. `cp tensorflow\research\object_detection\packages\tf2\setup.py`
-6. `python -m pip install --upgrade pip`
-7. `pip install .`
-8. Test the installation with `python object_detection/builders/model_builder_tf2_test.py` (inside models\research)
+3. git clone <a href=https://github.com/cocodataset/cocoapi.git>cocodataset/cocoapi</a>
+4. do `pip install .` on cocoapi\PythonAPI directory
+```bash
+# Before pip install, go to cocoapi\PythonAPI\setup.py and change line 14 from:
+extra_compile_args=['-Wno-cpp', '-Wno-unused-function', '-std=c99'],
+# to
+extra_compile_args={'gcc': ['/Qstd=c99']},
+```
+5. `protoc object_detection/protos/*.proto --python_out=.`
+6. `cp tensorflow\research\object_detection\packages\tf2\setup.py`
+7. `python -m pip install --upgrade pip`
+8. `pip install .`
+9. Test the installation with `python object_detection/builders/model_builder_tf2_test.py` (inside models\research)
 
 ## Train and Evaluate
 1. Annotate image using <a href=https://makesense.ai>Makesense</a>
