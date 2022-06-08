@@ -1,0 +1,25 @@
+<annotation>
+	<folder>daurnusantara</folder>
+	<filename>plastic135.jpg</filename>
+	<path>/daurnusantara/plastic135.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>384</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>botol</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>158</xmin>
+			<ymin>85</ymin>
+			<xmax>340</xmax>
+			<ymax>267</ymax>
+		</bndbox>
+	</object>
+</annotation>
