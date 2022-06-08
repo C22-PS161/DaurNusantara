@@ -1,0 +1,3 @@
+<annotations><filename>bd964b0de5dd192b.jpg</filename><folder>images</folder><size><width>683</width><height>1024</height><depth>3</depth></size><object>
+    <name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>72.400732</xmin><ymin>192.0</ymin><xmax>506.163104</xmax><ymax>832.64</ymax></bndbox></object>
+</annotations>

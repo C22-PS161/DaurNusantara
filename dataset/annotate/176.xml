@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plasticbag_ImageNet</folder>
+	<filename>176.jpg</filename>
+	<path>/home/thanhvinh/Downloads/plasticbag_ImageNet/176.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>240</width>
+		<height>203</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>16</xmin>
+			<ymin>10</ymin>
+			<xmax>219</xmax>
+			<ymax>198</ymax>
+		</bndbox>
+	</object>
+</annotation>

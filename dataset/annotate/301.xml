@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plasticbag_ImageNet</folder>
+	<filename>301.jpg</filename>
+	<path>/home/thanhvinh/Downloads/plasticbag_ImageNet/301.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>333</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>29</xmin>
+			<ymin>41</ymin>
+			<xmax>307</xmax>
+			<ymax>285</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,11 @@
+<annotations><filename>vn_45.jpg</filename><folder>images</folder><size><width>800</width><height>531</height><depth>3</depth></size>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>372.37418</xmin><ymin>360.2804</ymin><xmax>556.1526</xmax><ymax>500.44574</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>265.43417</xmin><ymin>371.6453</ymin><xmax>346.03854</xmax><ymax>482.03366</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>707.5626</xmin><ymin>370.95255</ymin><xmax>788.73596</xmax><ymax>462.95676</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>584.5347</xmin><ymin>358.83896</ymin><xmax>665.4539</xmax><ymax>480.11447</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>7.9474716</xmin><ymin>374.74557</ymin><xmax>120.36538</xmax><ymax>527.7214</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>514.8119</xmin><ymin>391.17996</ymin><xmax>590.5408</xmax><ymax>469.76633</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>646.623</xmin><ymin>373.5679</ymin><xmax>706.0529</xmax><ymax>463.15475</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>155.21967</xmin><ymin>367.61523</ymin><xmax>269.08615</xmax><ymax>494.8529</ymax></bndbox></object>
+    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>384.79416</xmin><ymin>339.77557</ymin><xmax>473.09128</xmax><ymax>422.27203</ymax></bndbox></object>
+</annotations>

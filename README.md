@@ -16,7 +16,12 @@
 Object detection using Tensorflow with pre-trained model Centernet. 
 
 ## Screenshots
+* Training Screenshot
 ![Example screenshot](./img/screenshot(1).png)
+* Tensorboard Evaluation
+![tensorboard screenshot](./img/tensorboard.png)
+* Evaluation Result
+![evaluation screenshot](./img/eval_result.jpeg)
 
 ## Libraries
 * Matplotlib
@@ -74,7 +79,8 @@ extra_compile_args={'gcc': ['/Qstd=c99']},
 ```bash
 "Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
 ```
-10. (WIP)
+10. Run `Tensorboard --logdir=.` on both ./models/train and ./models/eval directory
+11. **(WIP)**
 
 ## Object Detection Labels
 * kantong (ID: 0) 

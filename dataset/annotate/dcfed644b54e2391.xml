@@ -1,0 +1,1 @@
+<annotations><filename>dcfed644b54e2391.jpg</filename><folder>images</folder><size><width>768</width><height>1024</height><depth>3</depth></size><object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>52.800000000000004</xmin><ymin>42.399744</ymin><xmax>715.2</xmax><ymax>925.599744</ymax></bndbox></object></annotations>
