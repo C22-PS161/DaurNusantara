@@ -1,0 +1,25 @@
+<annotation>
+	<folder>daurnusantara</folder>
+	<filename>cup12.jpg</filename>
+	<path>/daurnusantara/cup12.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>3120</width>
+		<height>4160</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>cup</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>646</xmin>
+			<ymin>1022</ymin>
+			<xmax>2794</xmax>
+			<ymax>3143</ymax>
+		</bndbox>
+	</object>
+</annotation>
