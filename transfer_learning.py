@@ -13,7 +13,7 @@ def customize_pipeline_config(pipeline_config_path):
         proto_str = fio.read()                                                                                                                                                                                                                                          
         text_format.Merge(proto_str, pipeline_config)
     
-    pipeline_config.model.center_net.num_classes = 8
+    pipeline_config.model.center_net.num_classes = 7
     pipeline_config.train_config.batch_size = 4
     pipeline_config.train_config.fine_tune_checkpoint = PRETRAINED_MODEL_PATH + '/centernet_resnet50_v1_fpn_512x512_coco17_tpu-8/checkpoint/ckpt-0'
     pipeline_config.train_config.fine_tune_checkpoint_type = "detection"

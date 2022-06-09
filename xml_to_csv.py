@@ -17,10 +17,10 @@ def convert_to_xml(path):
                 int(root.find('size')[0].text), #size width
                 int(root.find('size')[1].text), #size height
                 object_tag[0].text, #nama objek
-                int(object_tag[4][0].text), #bndbox xmin
-                int(object_tag[4][1].text), #bndbox ymin
-                int(object_tag[4][2].text), #bndbox xmax
-                int(object_tag[4][3].text) #bndbox ymax
+                int(object_tag.find('bndbox').find('xmin').text), #bndbox xmin
+                int(object_tag.find('bndbox').find('ymin').text), #bndbox ymin
+                int(object_tag.find('bndbox').find('xmax').text), #bndbox xmax
+                int(object_tag.find('bndbox').find('ymax').text) #bndbox ymax
             )
             list_xml.append(values)
     headercsv = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
