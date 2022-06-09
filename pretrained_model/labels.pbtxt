@@ -12,21 +12,17 @@ item {
 }
 item {
   id: 4
-  name: 'sampah_organik'
-}
-item {
-  id: 5
   name: 'kardus'
 }
 item {
-  id: 6
+  id: 5
   name: 'cup'
 }
 item {
-  id: 7
+  id: 6
   name: 'kaleng'
 }
 item {
-  id: 8
+  id: 7
   name: 'botol'
 }

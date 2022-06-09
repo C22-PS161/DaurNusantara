@@ -1,4 +1,0 @@
-<annotations><filename>vn_6.jpg</filename><folder>images</folder><size><width>960</width><height>640</height><depth>3</depth></size>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>77.890625</xmin><ymin>14.403046</ymin><xmax>839.6612</xmax><ymax>639.0</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>67.874435</xmin><ymin>41.993256</ymin><xmax>392.48828</xmax><ymax>460.93253</ymax></bndbox></object>
-</annotations>

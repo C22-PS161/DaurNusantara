@@ -1,5 +1,49 @@
-<annotations><filename>05642dbfac7ae5b0.jpg</filename><folder>images</folder><size><width>1024</width><height>768</height><depth>3</depth></size>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>655.200256</xmin><ymin>245.600256</ymin><xmax>867.2</xmax><ymax>696.0</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>227.999744</xmin><ymin>156.0</ymin><xmax>1018.3997439999999</xmax><ymax>745.599744</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>230.4</xmin><ymin>150.399744</ymin><xmax>1023.2002560000001</xmax><ymax>746.4000000000001</ymax></bndbox></object>
-</annotations>
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>05642dbfac7ae5b0.jpg</filename>
+	<path>/my-project-name/05642dbfac7ae5b0.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>768</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>231</xmin>
+			<ymin>205</ymin>
+			<xmax>429</xmax>
+			<ymax>501</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>634</xmin>
+			<ymin>238</ymin>
+			<xmax>849</xmax>
+			<ymax>719</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>497</xmin>
+			<ymin>154</ymin>
+			<xmax>674</xmax>
+			<ymax>406</ymax>
+		</bndbox>
+	</object>
+</annotation>

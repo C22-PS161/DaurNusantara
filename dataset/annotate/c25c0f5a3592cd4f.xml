@@ -1,3 +1,25 @@
-<annotations><filename>c25c0f5a3592cd4f.jpg</filename><folder>images</folder><size><width>768</width><height>1024</height><depth>3</depth></size>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>216.95999999999998</xmin><ymin>270.72</ymin><xmax>522.8797440000001</xmax><ymax>769.28</ymax></bndbox></object>
-</annotations>
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>c25c0f5a3592cd4f.jpg</filename>
+	<path>/my-project-name/c25c0f5a3592cd4f.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>768</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kantong</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>217</xmin>
+			<ymin>275</ymin>
+			<xmax>514</xmax>
+			<ymax>773</ymax>
+		</bndbox>
+	</object>
+</annotation>

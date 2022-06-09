@@ -14,12 +14,12 @@ df = pd.read_csv(DATASET_PATH)
 #--------------------------------------------------
 # kantong           : 0 
 # kertas            : 1 
-# piring            : 2 
-# sampah_organik    : 3 
-# kardus            : 4 
-# cup               : 5 
-# kaleng            : 6 
-# botol             : 7
+# piring            : 2  
+# kardus            : 3 
+# cup               : 4 
+# kaleng            : 5 
+# botol             : 6
+
 targets_class = copy.deepcopy(df['class'])
 arr_unique = targets_class.unique()
 

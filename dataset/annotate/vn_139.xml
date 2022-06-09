@@ -1,9 +1,0 @@
-<annotations><filename>vn_139.jpg</filename><folder>images</folder><size><width>600</width><height>401</height><depth>3</depth></size>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>0.0</xmin><ymin>65.732666</ymin><xmax>599.0</xmax><ymax>400.0</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>308.21332</xmin><ymin>12.507706</ymin><xmax>562.645</xmax><ymax>292.57178</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>0.0</xmin><ymin>91.06233</ymin><xmax>184.97531</xmax><ymax>397.86523</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>448.0349</xmin><ymin>257.22336</ymin><xmax>589.5841</xmax><ymax>390.532</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>271.47375</xmin><ymin>71.269775</ymin><xmax>359.0677</xmax><ymax>141.23766</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>419.62427</xmin><ymin>163.15883</ymin><xmax>593.7747</xmax><ymax>294.64087</ymax></bndbox></object>
-    <object><name>kantong</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>134.8894</xmin><ymin>113.63429</ymin><xmax>226.96185</xmax><ymax>178.9582</ymax></bndbox></object>
-</annotations>
