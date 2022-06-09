@@ -79,14 +79,18 @@ extra_compile_args={'gcc': ['/Qstd=c99']},
 7. Run `python transfer_learning.py`
 8. (Train model) Run `python model_main_tf2.py` from tensorflow model 
 ```bash
-"Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --num_train_steps=2000
+python "Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --num_train_steps=2000
 ```
 9. (Evaluate model) Run `python model_main_tf2.py` from tensorflow model 
 ```bash
-"Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
+python "Tensorflow\models\research\object_detection\model_main_tf2.py" --model_dir="./models" --pipeline_config_path="./pretrained_model/pipeline.config" --checkpoint_dir="./models"
 ```
 10. Run `Tensorboard --logdir=.` on both ./models/train and ./models/eval directory
-11. **(WIP)**
+11. Freezing the Graph
+```bash
+python "Tensorflow\models\research\object_detection\exporter_main_v2.py" --input_type=image_tensor --pipeline_config_path="./pretrained_model/pipeline.config" --trained_checkpoint_dir="./models" --output_directory="./savedgraphmodel"
+```
+12. **(WIP)**
 
 ## Object Detection Labels
 * kantong (ID: 0) 
