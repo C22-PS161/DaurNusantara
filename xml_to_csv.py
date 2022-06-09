@@ -14,8 +14,8 @@ def convert_to_xml(path):
         for object_tag in root.findall('object'): #dikarenakan tiap gambar bisa ada lebih dari 1 objek
             values = (
                 root.find('filename').text, #filename
-                int(root.find('size')[0].text), #size width
-                int(root.find('size')[1].text), #size height
+                int(root.find('size').find('width').text), #size width
+                int(root.find('size').find('height').text), #size height
                 object_tag[0].text, #nama objek
                 int(object_tag.find('bndbox').find('xmin').text), #bndbox xmin
                 int(object_tag.find('bndbox').find('ymin').text), #bndbox ymin
