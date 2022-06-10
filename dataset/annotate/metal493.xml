@@ -1,0 +1,25 @@
+<annotation>
+	<folder>daurnusantara-ml</folder>
+	<filename>metal493.jpg</filename>
+	<path>/daurnusantara-ml/metal493.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>225</width>
+		<height>225</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kaleng</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>81</xmin>
+			<ymin>30</ymin>
+			<xmax>146</xmax>
+			<ymax>200</ymax>
+		</bndbox>
+	</object>
+</annotation>

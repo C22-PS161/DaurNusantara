@@ -18,8 +18,8 @@ import shutil
 import argparse
 
 # Directories
-train_directory = './images/train' # It should contain the xml files with bounding boxes
-test_directory = './images/test' # It should contain the xml files with bounding boxes
+train_directory = './dataset/images' # It should contain the xml files with bounding boxes
+test_directory = './dataset/images' # It should contain the xml files with bounding boxes
 
 # Keep calm and do not touch the rest of the code :3
 parser = argparse.ArgumentParser()

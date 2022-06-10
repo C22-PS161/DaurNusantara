@@ -1,0 +1,25 @@
+<annotation>
+	<folder>daurnusantara-ml</folder>
+	<filename>28S96F28KAEV.jpg</filename>
+	<path>/daurnusantara-ml/28S96F28KAEV.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>piring</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>3</ymin>
+			<xmax>460</xmax>
+			<ymax>512</ymax>
+		</bndbox>
+	</object>
+</annotation>
