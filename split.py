@@ -6,7 +6,7 @@ from sklearn.model_selection import cross_val_predict, StratifiedKFold, train_te
 #--------------------------------------------------
 # read csv dataset from path
 #--------------------------------------------------
-DATASET_PATH = "./labels.csv"
+DATASET_PATH = "./csv/labels.csv"
 df = pd.read_csv(DATASET_PATH)
 
 #--------------------------------------------------
@@ -36,5 +36,5 @@ df.to_csv('./new_labels.csv', index=False)
 # split the dataset with 0.2 data test
 #--------------------------------------------------
 train, test = train_test_split(df, test_size=0.2)
-train.to_csv('./train.csv', index=False)
-test.to_csv('./test.csv', index=False)
+train.to_csv('./csv/train.csv', index=False)
+test.to_csv('./csv/test.csv', index=False)
