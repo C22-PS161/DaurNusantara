@@ -69,7 +69,7 @@ extra_compile_args={'gcc': ['/Qstd=c99']},
 8. `pip install .`
 9. Test the installation with `python object_detection/builders/model_builder_tf2_test.py` (inside models\research)
 
-## Train and Evaluate
+## Train Model
 1. Annotate image using <a href=https://makesense.ai>Makesense</a>
 2. Run script.py to create CSV files
 3. Run split.py to split CSV files into train and test CSV files
@@ -90,17 +90,15 @@ python "Tensorflow\models\research\object_detection\model_main_tf2.py" --model_d
 ```bash
 python "Tensorflow\models\research\object_detection\exporter_main_v2.py" --input_type=image_tensor --pipeline_config_path="./pretrained_model/pipeline.config" --trained_checkpoint_dir="./models" --output_directory="./savedgraphmodel"
 ```
-12. **(WIP)**
 
 ## Object Detection Labels
 * kantong (ID: 0) 
 * kertas (ID: 1) 
 * piring (ID: 2) 
-* sampah_organik (ID: 3)
-* kardus (ID: 4) 
-* cup (ID: 5) 
-* kaleng (ID: 6)
-* botol (ID: 7)
+* kardus (ID: 3) 
+* cup (ID: 4) 
+* kaleng (ID: 5)
+* botol (ID: 6)
 
 ## Status
 Project is: _in progress_
